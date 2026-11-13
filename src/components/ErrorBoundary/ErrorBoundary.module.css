@@ -1,0 +1,15 @@
+.shell {
+  max-width: var(--layout-max-width);
+}
+.screen {
+  padding-block: 3rem;
+}
+.title {
+  margin-bottom: 0.5rem;
+}
+.icon {
+  margin-inline-end: 0.5rem;
+}
+.text {
+  margin-bottom: 1rem;
+}

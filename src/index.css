@@ -1,0 +1,13 @@
+/* Глобально — только то, что относится ко всей странице.
+   Стили компонентов лежат рядом с ними в *.module.css. */
+
+:root {
+  --bs-body-font-family: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --radius: 0.75rem;
+  --layout-max-width: 1320px;
+}
+
+body {
+  background: #f4f6f9;
+  font-variant-numeric: tabular-nums; /* цифры одной ширины — цены ровно выстраиваются в столбик */
+}

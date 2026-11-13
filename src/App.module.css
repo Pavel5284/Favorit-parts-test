@@ -1,0 +1,90 @@
+/* Контейнер тянется плавно на любой ширине, без скачков Bootstrap .container.
+   Максимум совпадает с шириной .container на брейкпойнте xxl. */
+.shell {
+  max-width: var(--layout-max-width);
+}
+
+/* ---------- Шапка (Flexbox) ---------- */
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+.headerInner {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding-block: 1rem;
+}
+.headerIcon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius);
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 1.35rem;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--bs-secondary-color);
+}
+
+.main {
+  padding-block: 1.5rem 3rem;
+}
+
+/* ---------- Результаты (CSS Grid) ---------- */
+.results {
+  display: grid;
+  grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 991.98px) {
+  .results {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgb(16 24 40 / 0.04);
+}
+.sectionTitle {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color);
+}
+
+.count {
+  margin-inline-start: 0.5rem;
+}
+
+.hint {
+  margin-bottom: 0;
+  color: var(--bs-secondary-color);
+}
+.hintIcon {
+  display: none;
+  margin-inline-end: 0.5rem;
+}
+@media (min-width: 992px) {
+  .hintIcon {
+    display: inline;
+  }
+}

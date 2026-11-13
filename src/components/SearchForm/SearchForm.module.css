@@ -1,0 +1,41 @@
+/* Поиск (Flexbox). Селекторы вида «.field .input» чуть сильнее классов Bootstrap,
+   поэтому не зависят от порядка подключения стилей. */
+.search {
+  margin-bottom: 1.5rem;
+}
+.box {
+  display: flex;
+  gap: 0.5rem;
+}
+.field {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+.field .input {
+  padding-inline: 2.75rem;
+}
+.icon {
+  position: absolute;
+  inset-block: 0;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--bs-secondary-color);
+  pointer-events: none;
+}
+.field .clear {
+  position: absolute;
+  inset-block: 0;
+  right: 0.25rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.75rem;
+  color: var(--bs-secondary-color);
+}
+
+@media (max-width: 575.98px) {
+  .box .submit {
+    padding-inline: 1rem;
+  }
+}

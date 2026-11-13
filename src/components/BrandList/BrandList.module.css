@@ -1,0 +1,14 @@
+/* Раскладка пункта списка; цвета и состояния остаются за Bootstrap. */
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.brand {
+  display: block;
+  font-weight: 600;
+}
+.name {
+  opacity: 0.75;
+}

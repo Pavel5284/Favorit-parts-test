@@ -1,0 +1,11 @@
+/* Раскладка сообщения об ошибке; цвета и отступы — из Bootstrap alert. */
+.error {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.icon {
+  margin-inline-end: 0.5rem;
+}
